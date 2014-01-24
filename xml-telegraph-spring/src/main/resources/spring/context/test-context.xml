@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:int="http://www.springframework.org/schema/integration"
+      xmlns:context="http://www.springframework.org/schema/context"
+      xmlns:int-http="http://www.springframework.org/schema/integration/http"
+      xmlns:task="http://www.springframework.org/schema/task" 
+      xmlns:p="http://www.springframework.org/schema/p"
+      xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/integration
+        http://www.springframework.org/schema/integration/spring-integration.xsd
+        http://www.springframework.org/schema/integration/http
+        http://www.springframework.org/schema/integration/http/spring-integration-http.xsd
+        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+    <bean id="sendMessageConverter" 
+        class="org.toms.integration.telegraph.support.SendMessageConverter" 
+        p:encoding="UTF-8">
+    </bean> 
+    <bean id="receiveMessageConverter"
+        class="org.toms.integration.telegraph.support.ReceiveMessageConverter" 
+        p:encoding="UTF-8">
+    </bean> 
+
+  </beans>

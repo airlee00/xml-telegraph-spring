@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<msg id="N01011102">
+	<header>
+		<tr_length c="전문길이" t="c" l="4" d="0124" />
+		<tr_code c="TR-Code" t="c" l="9" d=" " />
+		<text_start c="TEXT개시문자" t="c" l="3" d="KID" />
+		<tr_type c="전문종별코드" t="c" l="4" d="0100" />
+		<tr_id c="업무구분코드" t="c" l="9" d="N01011102" />
+		<start_dt c="전문개시일시" t="c" l="12" d=" " />
+		<trace_no c="전문추적번호" t="c" l="2" d=" " />
+		<rcv_code c="수신기관코드" t="c" l="2" d="00" />
+		<snd_code c="발신기관코드" t="c" l="2" d="99" />
+		<snd_tmn_no c="발신단말번호" t="c" l="8" d=" " />
+		<tr_id_no c="전문고유번호" t="c" l="6" d=" " />
+		<ims_tr_code c="IMSTRCode" t="c" l="10" d=" " />
+		<record_cnt c="현레코드수" t="c" l="2" d=" " />
+		<data_ctn c="자료계속여부" t="c" l="1" d=" " />
+		<manage_info c="전산망 관리정보" t="c" l="3" d=" " />
+		<res_code c="응답코드" t="c" l="2" d=" " />
+		<padding c="예비란" t="c" l="10" d=" " />
+		<use_agr c="정보조회및이용동의여부" t="c" l="1" d="Y" />
+		<use_aim c="이용목적" t="c" l="1" d="5" />
+		<confirm_code c="확인코드" t="c" l="13" d="I192010010060" />
+	</header>
+	<send>
+		<s_record_cnt c="순서번호" t="i" l="4" d="0000" />
+		<s_rnno c="주민등록번호" t="c" l="20" d=" " />
+	</send>
+	<receive>
+		<array name="accident" l="254">
+			<record>
+				<serialNo c="순서번호" t="c" l="4" />
+				<insrCode c="회사" t="c" l="2" />
+				<cntrNumb c="계약번호" t="c" l="9" />
+				<cntrSeqno c="계약일련번호" t="c" l="3" />
+				<gradeNum c="급수" t="s" l="2" />
+				<accdScor c="사고점수" t="b" l="3" />
+				<bulk4 c="벌크_기타" t="c" l="88" />
+			</record>
+		</array>
+	</receive>
+</msg>
